@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 let title = "Gemini Coder – AI Code Generator";
 let description = "Generate your next app with Gemini";
@@ -38,7 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-      {children}
+      <ThemeProvider>
+        {children}
+      </ThemeProvider>
     </html>
   );
 }

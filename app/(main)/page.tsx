@@ -35,12 +35,10 @@ export default function Home() {
     }
   ];
   let [model, setModel] = useState(models[0].value);
-  let [shadcn, setShadcn] = useState(false);
   let [modification, setModification] = useState("");
   let [generatedCode, setGeneratedCode] = useState("");
   let [initialAppConfig, setInitialAppConfig] = useState({
     model: "",
-    shadcn: true,
   });
   let [ref, scrollTo] = useScrollTo();
   let [messages, setMessages] = useState<{ role: string; content: string }[]>(
@@ -66,7 +64,6 @@ export default function Home() {
       },
       body: JSON.stringify({
         model,
-        shadcn,
         messages: [{ role: "user", content: prompt }],
       }),
     });
@@ -93,7 +90,7 @@ export default function Home() {
     }
 
     setMessages([{ role: "user", content: prompt }]);
-    setInitialAppConfig({ model, shadcn });
+    setInitialAppConfig({ model });
     setStatus("created");
   }
 
@@ -191,21 +188,6 @@ export default function Home() {
                   </Select.Content>
                 </Select.Portal>
               </Select.Root>
-            </div>
-
-            <div className="flex h-full items-center justify-between gap-3 sm:justify-center">
-              <label className="text-gray-500 sm:text-xs" htmlFor="shadcn">
-                shadcn/ui:
-              </label>
-              <Switch.Root
-                className="group flex w-20 max-w-xs items-center rounded-2xl border-[6px] border-gray-300 bg-white p-1.5 text-sm shadow-inner transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 data-[state=checked]:bg-blue-500"
-                id="shadcn"
-                name="shadcn"
-                checked={shadcn}
-                onCheckedChange={(value) => setShadcn(value)}
-              >
-                <Switch.Thumb className="size-7 rounded-lg bg-gray-200 shadow-[0_1px_2px] shadow-gray-400 transition data-[state=checked]:translate-x-7 data-[state=checked]:bg-white data-[state=checked]:shadow-gray-600" />
-              </Switch.Root>
             </div>
           </div>
         </fieldset>

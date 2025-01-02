@@ -1,7 +1,7 @@
-<a href="https://www.geminicoder.io">
-  <img alt="Gemini Coder" src="./public/logo.svg">
-  <h1 align="center">Gemini Coder</h1>
-</a>
+<div style="display: flex; align-items: center; justify-content: center;">
+  <img alt="Gemini Coder" src="./public/logo.svg" style="height: 50px;">
+  <h1 style="margin-left: 10px;">Gemini Coder</h1>
+</div>
 
 <p align="center">
   Generate small apps with one prompt. Powered by the Gemini API.

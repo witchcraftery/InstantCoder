@@ -21,7 +21,7 @@ export default function Footer() {
           >
             Inspired on Llamacoder
           </a>
-          .
+          . This is not an official Google product.
         </div>
       </div>
       <div className="flex space-x-4 pb-4 sm:pb-0">

@@ -1,15 +1,10 @@
-<div style="display: flex; align-items: center; justify-content: center;">
-  <img alt="Gemini Coder" src="./public/logo.svg" style="height: 50px;">
-  <h1 style="margin-left: 10px;">Gemini Coder</h1>
-</div>
-
 <p align="center">
   Generate small apps with one prompt. Powered by the Gemini API.
 </p>
 
 Try it in https://huggingface.co/spaces/osanseviero/gemini-coder 
 
-This project is fully based on [llamacoder](https://github.com/Nutlope/llamacoder). Please follow [Nutlope](https://github.com/Nutlope) and give them a star..
+This project is fully based on [llamacoder](https://github.com/Nutlope/llamacoder). Please follow [Nutlope](https://github.com/Nutlope) and give them a star.
 
 ## Tech stack
 
@@ -21,7 +16,7 @@ You can also experiment with Gemini in [Google AI Studio](https://aistudio.googl
 
 ## Cloning & running
 
-1. Clone the repo: `git clone https://github.com/osanseviero/geminicoder`
+1. Clone the repo: `git clone https://github.com/osanseviero/GemCoder`
 2. Create a `.env` file and add your [Google AI Studio API key](https://aistudio.google.com/app/apikey): `GOOGLE_AI_API_KEY=`
 3. Run `npm install` and `npm run dev` to install dependencies and run locally
 

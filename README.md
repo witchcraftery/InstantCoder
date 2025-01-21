@@ -1,8 +1,9 @@
+<h1 align="center">InstantCoder</h1>
 <p align="center">
   Generate small apps with one prompt. Powered by the Gemini API.
 </p>
 
-Try it in https://huggingface.co/spaces/osanseviero/GemCoder
+Try it in https://huggingface.co/spaces/osanseviero/InstantCoder
 
 This project is fully based on [llamacoder](https://github.com/Nutlope/llamacoder). Please follow [Nutlope](https://github.com/Nutlope) and give them a star.
 

@@ -32,7 +32,27 @@ export default function Home() {
     {
       label: "gemini-1.5-flash",
       value: "gemini-1.5-flash",
-    }
+    },
+    {
+      label: "gemini-2.5-pro-exp",
+      value: "gemini-2.5-pro-exp",
+    },
+    {
+      label: "openai/gpt-4o",
+      value: "openai/gpt-4o",
+    },
+    {
+      label: "openai/gpt-4-turbo",
+      value: "openai/gpt-4-turbo",
+    },
+    {
+      label: "anthropic/claude-3.5-sonnet",
+      value: "anthropic/claude-3.5-sonnet",
+    },
+    {
+      label: "anthropic/claude-3-opus",
+      value: "anthropic/claude-3-opus",
+    },
   ];
   let [model, setModel] = useState(models[0].value);
   let [modification, setModification] = useState("");
